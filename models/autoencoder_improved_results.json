@@ -1,0 +1,61 @@
+{
+  "timestamp": "2025-09-30T12:26:10",
+  "model_type": "ImprovedAutoencoder",
+  "model_path": "models/autoencoder_improved.keras",
+  "architecture": {
+    "input_dim": 704,
+    "encoder": "704 \u2192 512 \u2192 128 \u2192 64",
+    "decoder": "64 \u2192 128 \u2192 512 \u2192 704",
+    "latent_dim": 64,
+    "normalization": "LayerNorm",
+    "activation": "ReLU",
+    "output_activation": "linear",
+    "regularization": {
+      "l2_weights": 0.0001,
+      "l1_latent": 1e-05
+    },
+    "denoising": true,
+    "gaussian_noise": 0.05
+  },
+  "training": {
+    "optimizer": "Adam(1e-3)",
+    "loss": "MSE",
+    "batch_size": 512,
+    "epochs_max": 50,
+    "validation_split": 0.1,
+    "callbacks": [
+      "ReduceLROnPlateau",
+      "EarlyStopping"
+    ],
+    "training_time_seconds": 148.82193803787231
+  },
+  "evaluation": {
+    "threshold": 0.23199006319046023,
+    "precision": 0.4291151284490961,
+    "recall": 0.11275,
+    "f1_score": 0.17857849930706793,
+    "roc_auc": 0.8228461533333332,
+    "tp": 2255,
+    "fp": 3000,
+    "tn": 27000,
+    "fn": 17745
+  },
+  "data_shapes": {
+    "train": [
+      77920,
+      704
+    ],
+    "test": [
+      50000,
+      704
+    ]
+  },
+  "feature_type": "standardized_704_features",
+  "score_statistics": {
+    "normal_mean": 0.19232559204101562,
+    "normal_std": 2.679140090942383,
+    "attack_mean": 3.813918352127075,
+    "attack_std": 31.0888614654541,
+    "separation_ratio": 19.830530166625977
+  }
+}

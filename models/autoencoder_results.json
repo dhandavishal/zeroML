@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-09-30T10:19:59",
+  "model_type": "Autoencoder",
+  "model_path": "models/autoencoder_model.keras",
+  "hyperparameters": {
+    "latent_dim": 64,
+    "epochs": 20,
+    "batch_size": 512
+  },
+  "training_time_seconds": 25.673723936080933,
+  "evaluation": {
+    "threshold": 6.47617086997343e-06,
+    "precision": 0.24924924924924924,
+    "recall": 0.0249,
+    "f1_score": 0.0452768433493954,
+    "roc_auc": 0.40660363749999995,
+    "tp": 498,
+    "fp": 1500,
+    "tn": 28500,
+    "fn": 19502
+  },
+  "data_shapes": {
+    "train": [
+      77920,
+      200
+    ],
+    "test": [
+      50000,
+      200
+    ]
+  },
+  "feature_type": "PCA",
+  "normalization": "min_max_to_[0,1]",
+  "normalization_params": {
+    "X_min": -345.54119873046875,
+    "X_max": 331.99237060546875
+  }
+}
