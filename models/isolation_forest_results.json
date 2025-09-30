@@ -1,0 +1,83 @@
+{
+  "timestamp": "2025-09-30T07:15:34",
+  "model_type": "IsolationForest",
+  "model_path": "models/isolation_forest.pkl",
+  "training_time_seconds": 0.5133352279663086,
+  "data_shapes": {
+    "train": [
+      77920,
+      704
+    ],
+    "val": [
+      19481,
+      704
+    ],
+    "test": [
+      50000,
+      704
+    ]
+  },
+  "hyperparameters": {
+    "contamination": 0.1,
+    "n_estimators": 100,
+    "random_state": 42
+  },
+  "evaluation": {
+    "train": {
+      "threshold": 0.5674175479472483,
+      "precision": 0.0,
+      "recall": 0,
+      "f1_score": 0.0,
+      "roc_auc": null,
+      "true_positives": 0,
+      "false_positives": 3896,
+      "true_negatives": 74024,
+      "false_negatives": 0,
+      "accuracy": 0.95
+    },
+    "val": {
+      "threshold": 0.5674175479472483,
+      "precision": 0.0,
+      "recall": 0,
+      "f1_score": 0.0,
+      "roc_auc": null,
+      "true_positives": 0,
+      "false_positives": 920,
+      "true_negatives": 18561,
+      "false_negatives": 0,
+      "accuracy": 0.9527744982290437
+    },
+    "test": {
+      "threshold": 0.5674175479472483,
+      "precision": 0.2688064192577733,
+      "recall": 0.0268,
+      "f1_score": 0.048740565608802404,
+      "roc_auc": 0.5591625100000001,
+      "true_positives": 536,
+      "false_positives": 1458,
+      "true_negatives": 28542,
+      "false_negatives": 19464,
+      "accuracy": 0.58156
+    }
+  },
+  "score_statistics": {
+    "train": {
+      "min": 0.446536094291749,
+      "max": 0.6866387111965454,
+      "mean": 0.5092895977520112,
+      "std": 0.041158218281711574
+    },
+    "val": {
+      "min": 0.446536094291749,
+      "max": 0.6864473847660713,
+      "mean": 0.5088903011709078,
+      "std": 0.0406958253633886
+    },
+    "test": {
+      "min": 0.446536094291749,
+      "max": 0.691687639888872,
+      "mean": 0.5082807211879969,
+      "std": 0.03682854534459415
+    }
+  }
+}
