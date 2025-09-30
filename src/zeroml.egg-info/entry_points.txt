@@ -1,0 +1,3 @@
+[console_scripts]
+zeroml-infer = zeroml.pipelines.infer:main
+zeroml-train = zeroml.pipelines.train:main

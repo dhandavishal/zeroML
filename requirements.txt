@@ -1,0 +1,11 @@
+numpy
+pandas
+scikit-learn
+pyarrow
+joblib
+tqdm
+matplotlib
+seaborn
+tensorflow-macos
+tensorflow-metal
+
