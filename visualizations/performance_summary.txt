@@ -1,0 +1,35 @@
+ZeroML Anomaly Detection - Performance Summary Report
+============================================================
+
+Dataset Information:
+  Total Samples: 50,000
+  Normal Samples: 30,000
+  Attack Samples: 20,000
+  Attack Rate: 40.00%
+
+Model Performance (at 2% FPR threshold):
+--------------------------------------------------
+🥇 OneClassSVM:
+    ROC-AUC: 0.9788
+    Precision: 0.9683
+    Recall: 0.9162
+    F1-Score: 0.9415
+
+🥈 Ensemble:
+    ROC-AUC: 0.8488
+    Precision: 0.6141
+    Recall: 0.0478
+    F1-Score: 0.0886
+
+🥉 Autoencoder:
+    ROC-AUC: 0.8228
+    Precision: 0.6880
+    Recall: 0.0662
+    F1-Score: 0.1207
+
+🏅 Isolation Forest:
+    ROC-AUC: 0.5780
+    Precision: 0.4048
+    Recall: 0.0204
+    F1-Score: 0.0388
+

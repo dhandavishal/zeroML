@@ -1,0 +1,321 @@
+{
+  "timestamp": "2025-09-30T16:15:17",
+  "model_type": "Isolation Forest (Improved)",
+  "model_path": "models/isolation_forest_improved.pkl",
+  "best_hyperparameters": {
+    "n_estimators": 50,
+    "max_samples": 256,
+    "max_features": 0.5,
+    "bootstrap": false,
+    "contamination": "auto"
+  },
+  "best_roc_auc": 0.5779845791666667,
+  "data_shapes": {
+    "train": [
+      77920,
+      704
+    ],
+    "val": [
+      19481,
+      704
+    ],
+    "test": [
+      50000,
+      704
+    ]
+  },
+  "feature_type": "standardized_704_features",
+  "thresholding_method": "validation_based_fpr_target",
+  "final_evaluations": {
+    "fpr_1pct": {
+      "threshold": 0.6469020910519852,
+      "precision": 0.5207667731629393,
+      "recall": 0.0163,
+      "f1_score": 0.03161058857752351,
+      "fpr": 0.01,
+      "target_fpr": 0.01,
+      "tp": 326,
+      "fp": 300,
+      "tn": 29700,
+      "fn": 19674
+    },
+    "fpr_2pct": {
+      "threshold": 0.6292361370216026,
+      "precision": 0.4053518334985134,
+      "recall": 0.02045,
+      "f1_score": 0.03893569422628397,
+      "fpr": 0.02,
+      "target_fpr": 0.02,
+      "tp": 409,
+      "fp": 600,
+      "tn": 29400,
+      "fn": 19591
+    },
+    "fpr_3pct": {
+      "threshold": 0.6195518529264743,
+      "precision": 0.327313769751693,
+      "recall": 0.02175,
+      "f1_score": 0.040789535374372916,
+      "fpr": 0.0298,
+      "target_fpr": 0.03,
+      "tp": 435,
+      "fp": 894,
+      "tn": 29106,
+      "fn": 19565
+    },
+    "fpr_5pct": {
+      "threshold": 0.5779659170251638,
+      "precision": 0.2836676217765043,
+      "recall": 0.0297,
+      "f1_score": 0.05377025436770164,
+      "fpr": 0.05,
+      "target_fpr": 0.05,
+      "tp": 594,
+      "fp": 1500,
+      "tn": 28500,
+      "fn": 19406
+    }
+  },
+  "hyperparameter_search_results": [
+    {
+      "params": {
+        "n_estimators": 50,
+        "max_samples": 256,
+        "max_features": 0.5,
+        "bootstrap": true,
+        "contamination": "auto"
+      },
+      "training_time": 0.936964750289917,
+      "roc_auc": 0.5686612366666667,
+      "best_metrics": {
+        "threshold": 0.6190339124362513,
+        "precision": 0.3258088788562829,
+        "recall": 0.02165,
+        "f1_score": 0.04060199728069764,
+        "fpr": 0.029866666666666666,
+        "target_fpr": 0.03,
+        "tp": 433,
+        "fp": 896,
+        "tn": 29104,
+        "fn": 19567,
+        "validation_threshold": 0.6190339124362513
+      }
+    },
+    {
+      "params": {
+        "n_estimators": 50,
+        "max_samples": 256,
+        "max_features": 0.5,
+        "bootstrap": true,
+        "contamination": 0.01
+      },
+      "training_time": 5.865216016769409,
+      "roc_auc": 0.5686612366666667,
+      "best_metrics": {
+        "threshold": 0.6190339124362513,
+        "precision": 0.3258088788562829,
+        "recall": 0.02165,
+        "f1_score": 0.04060199728069764,
+        "fpr": 0.029866666666666666,
+        "target_fpr": 0.03,
+        "tp": 433,
+        "fp": 896,
+        "tn": 29104,
+        "fn": 19567,
+        "validation_threshold": 0.6190339124362513
+      }
+    },
+    {
+      "params": {
+        "n_estimators": 50,
+        "max_samples": 256,
+        "max_features": 0.5,
+        "bootstrap": true,
+        "contamination": 0.02
+      },
+      "training_time": 5.94589900970459,
+      "roc_auc": 0.5686612366666667,
+      "best_metrics": {
+        "threshold": 0.6190339124362513,
+        "precision": 0.3258088788562829,
+        "recall": 0.02165,
+        "f1_score": 0.04060199728069764,
+        "fpr": 0.029866666666666666,
+        "target_fpr": 0.03,
+        "tp": 433,
+        "fp": 896,
+        "tn": 29104,
+        "fn": 19567,
+        "validation_threshold": 0.6190339124362513
+      }
+    },
+    {
+      "params": {
+        "n_estimators": 50,
+        "max_samples": 256,
+        "max_features": 0.5,
+        "bootstrap": true,
+        "contamination": 0.03
+      },
+      "training_time": 5.863246917724609,
+      "roc_auc": 0.5686612366666667,
+      "best_metrics": {
+        "threshold": 0.6190339124362513,
+        "precision": 0.3258088788562829,
+        "recall": 0.02165,
+        "f1_score": 0.04060199728069764,
+        "fpr": 0.029866666666666666,
+        "target_fpr": 0.03,
+        "tp": 433,
+        "fp": 896,
+        "tn": 29104,
+        "fn": 19567,
+        "validation_threshold": 0.6190339124362513
+      }
+    },
+    {
+      "params": {
+        "n_estimators": 50,
+        "max_samples": 256,
+        "max_features": 0.5,
+        "bootstrap": false,
+        "contamination": "auto"
+      },
+      "training_time": 0.9512472152709961,
+      "roc_auc": 0.5779845791666667,
+      "best_metrics": {
+        "threshold": 0.6195518529264743,
+        "precision": 0.327313769751693,
+        "recall": 0.02175,
+        "f1_score": 0.040789535374372916,
+        "fpr": 0.0298,
+        "target_fpr": 0.03,
+        "tp": 435,
+        "fp": 894,
+        "tn": 29106,
+        "fn": 19565,
+        "validation_threshold": 0.618370332838464
+      }
+    },
+    {
+      "params": {
+        "n_estimators": 50,
+        "max_samples": 256,
+        "max_features": 0.5,
+        "bootstrap": false,
+        "contamination": 0.01
+      },
+      "training_time": 5.957394123077393,
+      "roc_auc": 0.5779845791666667,
+      "best_metrics": {
+        "threshold": 0.6195518529264743,
+        "precision": 0.327313769751693,
+        "recall": 0.02175,
+        "f1_score": 0.040789535374372916,
+        "fpr": 0.0298,
+        "target_fpr": 0.03,
+        "tp": 435,
+        "fp": 894,
+        "tn": 29106,
+        "fn": 19565,
+        "validation_threshold": 0.618370332838464
+      }
+    },
+    {
+      "params": {
+        "n_estimators": 50,
+        "max_samples": 256,
+        "max_features": 0.5,
+        "bootstrap": false,
+        "contamination": 0.02
+      },
+      "training_time": 5.94323205947876,
+      "roc_auc": 0.5779845791666667,
+      "best_metrics": {
+        "threshold": 0.6195518529264743,
+        "precision": 0.327313769751693,
+        "recall": 0.02175,
+        "f1_score": 0.040789535374372916,
+        "fpr": 0.0298,
+        "target_fpr": 0.03,
+        "tp": 435,
+        "fp": 894,
+        "tn": 29106,
+        "fn": 19565,
+        "validation_threshold": 0.618370332838464
+      }
+    },
+    {
+      "params": {
+        "n_estimators": 50,
+        "max_samples": 256,
+        "max_features": 0.5,
+        "bootstrap": false,
+        "contamination": 0.03
+      },
+      "training_time": 5.913433790206909,
+      "roc_auc": 0.5779845791666667,
+      "best_metrics": {
+        "threshold": 0.6195518529264743,
+        "precision": 0.327313769751693,
+        "recall": 0.02175,
+        "f1_score": 0.040789535374372916,
+        "fpr": 0.0298,
+        "target_fpr": 0.03,
+        "tp": 435,
+        "fp": 894,
+        "tn": 29106,
+        "fn": 19565,
+        "validation_threshold": 0.618370332838464
+      }
+    },
+    {
+      "params": {
+        "n_estimators": 50,
+        "max_samples": 256,
+        "max_features": 0.75,
+        "bootstrap": true,
+        "contamination": "auto"
+      },
+      "training_time": 1.4841179847717285,
+      "roc_auc": 0.5270189375000001,
+      "best_metrics": {
+        "threshold": 0.6515417301454929,
+        "precision": 0.22473867595818817,
+        "recall": 0.0129,
+        "f1_score": 0.024399470399092113,
+        "fpr": 0.029666666666666668,
+        "target_fpr": 0.03,
+        "tp": 258,
+        "fp": 890,
+        "tn": 29110,
+        "fn": 19742,
+        "validation_threshold": 0.6490704442631606
+      }
+    },
+    {
+      "params": {
+        "n_estimators": 50,
+        "max_samples": 256,
+        "max_features": 0.75,
+        "bootstrap": true,
+        "contamination": 0.01
+      },
+      "training_time": 8.662253618240356,
+      "roc_auc": 0.5270189375000001,
+      "best_metrics": {
+        "threshold": 0.6515417301454929,
+        "precision": 0.22473867595818817,
+        "recall": 0.0129,
+        "f1_score": 0.024399470399092113,
+        "fpr": 0.029666666666666668,
+        "target_fpr": 0.03,
+        "tp": 258,
+        "fp": 890,
+        "tn": 29110,
+        "fn": 19742,
+        "validation_threshold": 0.6490704442631606
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "dataset_info": {
+    "total_samples": 50000,
+    "normal_samples": 30000,
+    "attack_samples": 20000,
+    "attack_rate": 0.4
+  },
+  "model_performance": {
+    "OneClassSVM": {
+      "roc_auc": 0.9787696058333333,
+      "precision_at_2pct_fpr": 0.9682942295497781,
+      "recall_at_2pct_fpr": 0.9162,
+      "f1_score_at_2pct_fpr": 0.9415270784092077,
+      "score_range": {
+        "min": -0.0005564809361054066,
+        "max": 0.013454512147643993,
+        "mean": 0.008748218832373823,
+        "std": 0.006183582274109761
+      }
+    },
+    "Autoencoder": {
+      "roc_auc": 0.8228461533333332,
+      "precision_at_2pct_fpr": 0.6879875195007801,
+      "recall_at_2pct_fpr": 0.06615,
+      "f1_score_at_2pct_fpr": 0.12069516033389589,
+      "score_range": {
+        "min": 0.011992085725069046,
+        "max": 320.9429016113281,
+        "mean": 1.6409626007080078,
+        "std": 19.850980758666992
+      }
+    },
+    "Isolation Forest": {
+      "roc_auc": 0.5779845791666667,
+      "precision_at_2pct_fpr": 0.40476190476190477,
+      "recall_at_2pct_fpr": 0.0204,
+      "f1_score_at_2pct_fpr": 0.03884234577303884,
+      "score_range": {
+        "min": 0.43912476073700585,
+        "max": 0.7074053616497664,
+        "mean": 0.5068487347298029,
+        "std": 0.03899495320120638
+      }
+    },
+    "Ensemble": {
+      "roc_auc": 0.8488364808333333,
+      "precision_at_2pct_fpr": 0.6141479099678456,
+      "recall_at_2pct_fpr": 0.04775,
+      "f1_score_at_2pct_fpr": 0.08861053119925771,
+      "score_range": {
+        "min": 0.0004612471469590368,
+        "max": 0.9844660596980604,
+        "mean": 0.3360433092767983,
+        "std": 0.18928488944457456
+      }
+    }
+  }
+}
