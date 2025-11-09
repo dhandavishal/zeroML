@@ -1,2 +1,11 @@
 data/
 *.pkl
+# Model files (too large for GitHub)
+models/*.pkl
+models/*.keras
+models/*.h5
+models/*.pb
+models/autoencoder_model/
+
+# Keep only JSON result files
+!models/*.json
