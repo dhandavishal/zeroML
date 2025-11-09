@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-09-30T09:51:48",
+  "timestamp": "2025-11-09T15:43:27",
   "model_type": "OneClassSVM",
   "model_path": "models/oneclass_svm_optimized.pkl",
   "hyperparameters": {
@@ -7,21 +7,21 @@
     "nu": 0.01,
     "kernel": "rbf"
   },
-  "training_time_seconds": 2080.3666622638702,
+  "training_time_seconds": 332.20432686805725,
   "test_evaluation": {
-    "threshold": 0.013451583860593197,
-    "precision": 0.9273150167175461,
-    "recall": 0.95685,
-    "f1_score": 0.9418510224672096,
-    "roc_auc": 0.9787696058333333,
-    "tp": 19137,
+    "threshold": 0.014778407221721593,
+    "precision": 0.9253136825333599,
+    "recall": 0.9292,
+    "f1_score": 0.9272527691847121,
+    "roc_auc": 0.982319835,
+    "tp": 18584,
     "fp": 1500,
     "tn": 28500,
-    "fn": 863
+    "fn": 1416
   },
   "data_shapes": {
     "train": [
-      77920,
+      38486,
       704
     ],
     "test": [

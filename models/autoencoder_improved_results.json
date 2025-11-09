@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-09-30T12:26:10",
+  "timestamp": "2025-11-09T16:03:43",
   "model_type": "ImprovedAutoencoder",
   "model_path": "models/autoencoder_improved.keras",
   "architecture": {
@@ -27,22 +27,22 @@
       "ReduceLROnPlateau",
       "EarlyStopping"
     ],
-    "training_time_seconds": 148.82193803787231
+    "training_time_seconds": 72.94936609268188
   },
   "evaluation": {
-    "threshold": 0.23199006319046023,
-    "precision": 0.4291151284490961,
-    "recall": 0.11275,
-    "f1_score": 0.17857849930706793,
-    "roc_auc": 0.8228461533333332,
-    "tp": 2255,
-    "fp": 3000,
-    "tn": 27000,
-    "fn": 17745
+    "threshold": 0.19122056663036346,
+    "precision": 0.793400385781207,
+    "recall": 0.57585,
+    "f1_score": 0.6673426816548846,
+    "roc_auc": 0.8302460833333334,
+    "tp": 11517,
+    "fp": 2999,
+    "tn": 27001,
+    "fn": 8483
   },
   "data_shapes": {
     "train": [
-      77920,
+      38486,
       704
     ],
     "test": [
@@ -52,10 +52,10 @@
   },
   "feature_type": "standardized_704_features",
   "score_statistics": {
-    "normal_mean": 0.19232559204101562,
-    "normal_std": 2.679140090942383,
-    "attack_mean": 3.813918352127075,
-    "attack_std": 31.0888614654541,
-    "separation_ratio": 19.830530166625977
+    "normal_mean": 0.17455458641052246,
+    "normal_std": 2.4118828773498535,
+    "attack_mean": 3.412313222885132,
+    "attack_std": 25.83660888671875,
+    "separation_ratio": 19.548688888549805
   }
 }
